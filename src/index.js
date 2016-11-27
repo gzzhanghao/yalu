@@ -85,6 +85,15 @@ class Logger {
       this.persistId = i + 1
     }
   }
+
+  finalize(id, ...args) {
+    this.update(id, ...args)
+    this.persist(id)
+  }
+
+  persistLog(...args) {
+    this.persist(this.log(...args))
+  }
 }
 
 module.exports = stream => new Logger(stream)

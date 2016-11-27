@@ -41,3 +41,11 @@ Update content of the log.
 ### logger.persist(id)
 
 Mark the log as persistent.
+
+### logger.finalize(id, ...content)
+
+Update the log and mark it as persistent immediately.
+
+### logger.persistLog(...content)
+
+Log to the stream and mark it as persistent immediately.
