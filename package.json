@@ -1,0 +1,30 @@
+{
+  "name": "yalu",
+  "version": "0.1.0",
+  "description": "Yet another log-update",
+  "main": "lib",
+  "scripts": {
+    "build": "babel src -d lib",
+    "watch": "babel src -d lib --watch",
+    "prepublish": "npm run build"
+  },
+  "author": "Jason",
+  "license": "MIT",
+  "dependencies": {
+    "ansi-escapes": "^1.4.0",
+    "term-size": "^0.1.0",
+    "wrap-ansi": "github:chalk/wrap-ansi"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.18.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.18.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gzzhanghao/yalu.git"
+  },
+  "bugs": {
+    "url": "https://github.com/gzzhanghao/yalu/issues"
+  },
+  "homepage": "https://github.com/gzzhanghao/yalu#readme"
+}
